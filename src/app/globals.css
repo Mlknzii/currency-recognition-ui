@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-[#ddd] dark:bg-gray-800 text-gray-800 dark:text-gray-200;
+}
+main {
+  @apply min-h-screen grid place-items-center;
+}
+input {
+  @apply outline-none border border-gray-300 dark:border-gray-500 rounded-md w-full p-2.5;
+}
+
+/* Custom Components */
+.btn {
+  @apply cursor-pointer rounded-sm px-8 py-3 text-sm font-medium transition hover:scale-110 hover:shadow-xl focus:outline-hidden;
+}
+.btn-primary {
+  @apply bg-indigo-600 text-white;
+}
+.btn-secondary {
+  @apply bg-gray-300 text-gray-800;
+}
+.btn-success {
+  @apply bg-green-600 text-white;
+}
+.btn-danger {
+  @apply bg-red-500 text-white;
+}
+.btn-danger-outline {
+  @apply border-2 border-red-400 text-red-400;
+}
+.link {
+  @apply text-xl  text-indigo-500 dark:text-indigo-300 hover:underline;
+}
+
+.heading1 {
+  @apply text-3xl md:text-4xl font-bold text-center text-indigo-500;
+}
+
+/* Header and Footer */
+.header {
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-white transition-all duration-300;
+}
+.footer {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300 py-4 w-full text-center;
+}
