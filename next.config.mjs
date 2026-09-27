@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "currency-detection-backend.onrender.com",
+        hostname: "https://currency-recognition-api-lw35.onrender.com",
         pathname: "/static/uploads/**",
       },
     ],
